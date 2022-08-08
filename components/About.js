@@ -56,24 +56,18 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mt-16 md:mb-0 items-center text-center md:ml-16"
+            className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mt-16 md:mb-0 items-center  text-center md:ml-16"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             transition={{ delay: 0.5 }}
           >
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-600">
-              Menjelaskan perusahaan ini seperti apa
+              Tentang Kami
               <br className="hidden lg:inline-block" />
             </h1>
             <p className="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}
+              PT.Bali Surya Pratama terbentuk pada tahun 2019,berlokasi di Buleleng-Bali.PT Bali Surya Pratama memiliki tujuan untuk melestarikan lingkungan dengan cara pengolahan limbah industri.
             </p>
           </motion.div>
         </div>
