@@ -57,7 +57,7 @@ const About = () => {
           </motion.div>
           <motion.div
             className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mt-16 md:mb-0 items-center text-center md:ml-16"
-            variants={slideRight}
+            variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             transition={{ delay: 0.5 }}

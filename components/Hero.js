@@ -53,9 +53,10 @@ export default function Hero () {
                   <Link href="/#produk">
                     <motion.a
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 lg:ml-0 md:ml-0"
-                      initial={{ x: "100vw" }}
-                      animate={{ x: 0 }}
-                      transition={{ duration: 1 }}
+                      variants={fadeUp}
+                      initial="hidden"
+                      animate="visible"
+                      transition={{ delay: 1.5 }}
                     >
                       Produk
                     </motion.a>
