@@ -26,30 +26,23 @@ export default function Hero () {
                 height={220}
                 alt="Logo BSP"
               /> */}
-              <h2 className="text-5xl tracking-tight leading-12 md:leading-12 font-extrabold sm:text-5xl text-lime-300 sm:leading-none md:text-6xl my-5 md:my-12 font-kaushan">Whereas recognition of the inhrent dignity</h2>
+              <h2 className="text-5xl tracking-tight leading-12 md:leading-12 font-extrabold sm:text-5xl text-lime-300 sm:leading-none md:text-7xl my-5 md:my-12 font-kaushan capitalize-first">
+               We Care We Share
+              </h2>
               <motion.h2
-                className="text-xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-white sm:leading-none md:text-2xl sm:py-5 font-montserrat md:-mt-5"
+                className="text-xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-white sm:leading-none md:text-2xl sm:py-5 font-montserrat md:-mt-10"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 1.5 }}
               >
-                PT.Bali Surya Pratama
+                Bali Surya Pratama
               </motion.h2>
-              <motion.p
-                className="mt-3 text-white sm:mt-5 sm:max-w-xl md:mt-2 text-md font-light italic w-full mx-auto"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </motion.p>
-              <div className="mt-5 sm:mt-8 sm:flex justify-center sm:max-w-3xl">
+              <div className="mt-5 sm:mt-24 sm:flex justify-center sm:max-w-3xl">
                 <div className="rounded-md shadow">
                   <Link href="/#produk">
                     <motion.a
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 lg:ml-24 md:ml-12"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-light rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-2 md:text-lg md:px-2 lg:ml-2 md:ml-12 cursor-pointer"
                       variants={fadeUp}
                       initial="hidden"
                       animate="visible"

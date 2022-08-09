@@ -12,5 +12,8 @@ module.exports = {
         montserrat:['Montserrat','sans-serif']
       }
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require('tailwind-capitalize-first-letter'),
+  ],
 }
