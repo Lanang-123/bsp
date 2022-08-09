@@ -26,9 +26,9 @@ export default function Hero () {
                 height={220}
                 alt="Logo BSP"
               /> */}
-              <h2 className="text-7xl tracking-tight leading-12 md:leading-10 font-extrabold sm:text-5xl text-white sm:leading-none md:text-8xl my-5 md:my-12">Bali Surya Pratama</h2>
+              <h2 className="text-7xl tracking-tight leading-12 md:leading-10 font-extrabold sm:text-5xl text-[#F5DF99] sm:leading-none md:text-8xl my-5 md:my-12">Bali Surya Pratama</h2>
               <motion.h2
-                className="text-3xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-green-600 sm:leading-none md:text-5xl sm:py-5 "
+                className="text-3xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-green-600 sm:leading-none md:text-5xl sm:py-5 italic"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
