@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily : {
-        poppins : ['Poppins', 'sans-serif']
+        poppins : ['Poppins', 'sans-serif'],
+        kaushan:['Kaushan Script','cursive'],
+        montserrat:['Montserrat','sans-serif']
       }
   },
   plugins: [require("@tailwindcss/line-clamp")],

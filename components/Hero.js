@@ -26,16 +26,15 @@ export default function Hero () {
                 height={220}
                 alt="Logo BSP"
               /> */}
-              <h2 className="text-7xl tracking-tight leading-12 md:leading-10 font-extrabold sm:text-5xl text-[#F5DF99] sm:leading-none md:text-8xl my-5 md:my-12">Bali Surya Pratama</h2>
+              <h2 className="text-5xl tracking-tight leading-12 md:leading-12 font-extrabold sm:text-5xl text-lime-300 sm:leading-none md:text-6xl my-5 md:my-12 font-kaushan">Whereas recognition of the inhrent dignity</h2>
               <motion.h2
-                className="text-3xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-green-600 sm:leading-none md:text-5xl sm:py-5 italic"
+                className="text-xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-white sm:leading-none md:text-2xl sm:py-5 font-montserrat md:-mt-5"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 1.5 }}
               >
-                We Care
-                <span className="text-white"> We Share</span>
+                PT.Bali Surya Pratama
               </motion.h2>
               <motion.p
                 className="mt-3 text-white sm:mt-5 sm:max-w-xl md:mt-2 text-md font-light italic w-full mx-auto"
@@ -50,7 +49,7 @@ export default function Hero () {
                 <div className="rounded-md shadow">
                   <Link href="/#produk">
                     <motion.a
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 lg:ml-16 md:ml-12"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 lg:ml-24 md:ml-12"
                       variants={fadeUp}
                       initial="hidden"
                       animate="visible"
