@@ -18,7 +18,7 @@ export default function Hero () {
         <div className="relative h-screen w-full flex items-center justify-start text-left bg-cover bg-center bg-[url('/assets/img/heronew.jpg')]">
           <div className="absolute top-0 right-0 bottom-0 left-0 bg-green-800 opacity-70"></div>
 
-          <main className="px-10 lg:px-24 z-10 flex justify-center items-center w-full relative -mt-10">
+          <main className="px-10 lg:px-24 z-10 flex justify-center items-center w-full relative flex-col -mt-10">
             <div className="text-center">
               {/* <Image
                 src="/assets/img/logo.png"
@@ -27,7 +27,7 @@ export default function Hero () {
                 alt="Logo BSP"
               /> */}
               <h2 className="text-5xl tracking-tight leading-12 md:leading-12 font-extrabold sm:text-5xl text-lime-300 sm:leading-none md:text-7xl my-5 md:my-12 font-kaushan capitalize-first">
-               We Care We Share
+                We Care We Share
               </h2>
               <motion.h2
                 className="text-xl tracking-tight leading-10 py-5 font-extrabold sm:text-5xl text-white sm:leading-none md:text-2xl sm:py-5 font-montserrat md:-mt-10"
@@ -38,8 +38,12 @@ export default function Hero () {
               >
                 Bali Surya Pratama
               </motion.h2>
-
             </div>
+            <Link href="/#produk">
+              <a className="md:w-full px-4 py-2 mt-10 text-sm text-center font-medium text-white uppercase transition-colors duration-200 transform bg-green-600 rounded-md lg:w-auto hover:bg-green-700 focus:outline-none focus:bg-blue-500">
+                Produk
+              </a>
+            </Link>
             {/* <div className="w-100 bg-white rounded-md">
                     <h1 className={styles.bgHero}>Halo</h1>
                 </div> */}
