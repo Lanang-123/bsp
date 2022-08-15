@@ -40,7 +40,7 @@ export default function Hero () {
               </motion.h2>
             </div>
             <Link href="/#produk">
-              <a className="md:w-full px-4 py-2 mt-10 text-sm text-center font-medium text-white uppercase transition-colors duration-200 transform bg-green-600 rounded-md lg:w-auto hover:bg-green-700 focus:outline-none focus:bg-blue-500">
+              <a className="md:w-full px-4 py-2 mt-10 text-sm text-center font-medium text-white uppercase transition-colors duration-200 transform bg-green-600 rounded-md lg:w-auto hover:bg-green-700 focus:outline-none">
                 Produk
               </a>
             </Link>
