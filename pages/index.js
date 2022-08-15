@@ -6,6 +6,7 @@ import Kategori from "../components/Kategori.js";
 import Customer from "../components/Customer.js";
 import Contact from "../components/Contact.js";
 import Footer from "../components/Footer.js";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -21,7 +22,15 @@ export default function Home() {
       <Benefit />
       <Kategori />
       <Customer />
-      <Contact /> 
+      <Contact />
+
+      <Link href="https://wa.me/628978946123">
+        <a className="whatsapp_float" target="_blank">
+          {" "}
+          <i className="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+      </Link>
+
       <script
         defer
         src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"

@@ -86,12 +86,15 @@ const KategoriName = () => {
   let result = [];
   if (name == "Fabrikasi Mesin") {
     const data1 = dataProduk.find((data) => data.id == "1");
-    const data2 = dataProduk.find((data) => data.id == "3");
-    const data3 = dataProduk.find((data) => data.id == "4");
+    const data2 = dataProduk.find((data) => data.id == "4");
 
-    result = addData(data1, data2, data3);
+    result = addData(data1, data2);
+  }else if(name == "Pengolahan Udara") {
+    const dataUdara = dataProduk.find((data)=>data.id == "3");
+    result = addData(dataUdara);
   }
 
+  console.log(result)
 
   return (
     <section className="text-gray-600 body-font">
@@ -203,74 +206,75 @@ const KategoriName = () => {
               animate="visible"
               transition={{ delay: 1.5 }}
             >
-              <Image
-                className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src="../assets/kategori/mesin.jpg"
-                alt="Fabrikasi Mesin"
-                width={600}
-                height={500}
-              />
+              {name == "Fabrikasi Mesin" && (
+                <Image
+                  className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                  src="../assets/kategori/mesin.jpg"
+                  alt="Fabrikasi Mesin"
+                  width={600}
+                  height={500}
+                />
+              )}
+              {name == "Pengolahan Udara" && (
+                <Image
+                  className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                  src="../assets/kategori/udara.jpg"
+                  alt="Fabrikasi Mesin"
+                  width={600}
+                  height={500}
+                />
+              )}
             </motion.div>
           </div>
         </div>
 
-        <h1 className="text-5xl text-center text-green-800 font-semibold my-7">
-          Produk
-        </h1>
-
-        <div className="flex flex-wrap -mx-4">
-          {result.map((data) => (
-            <div className="w-full md:w-1/2 xl:w-1/3 px-4" key={data.id}>
-              <div className="bg-white shadow-md rounded-lg overflow-hidden mb-10">
-                <Image
-                  src={data.img.produk}
-                  alt={data.title}
-                  className="w-full"
-                  width={600}
-                  height={400}
-                />
-                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                  <h3
-                    className="
-                            font-semibold
-                            text-dark text-xl
-                            sm:text-[22px]
-                            md:text-xl
-                            lg:text-[22px]
-                            xl:text-xl
-                            2xl:text-[22px]
-                            mb-4
-                            block
-                            hover:text-green-600
-                            "
-                  >
-                    {data.title}
-                  </h3>
-
-                  <p className="text-base text-body-color leading-relaxed mb-7 line-clamp-4">
-                    {data.desc}
-                  </p>
-                  <Link href={`/kategori/produkkategori/${data.title}`}>
-                    <a
-                      className="
-                        inline-block
-                        py-2
-                        px-7
-                        border border-green-500
-                        rounded-full
-                        text-base text-green-600
-                        font-medium
-                        hover:border-primary hover:bg-green-100 hover:text-green-700 
-                        transition
-                        "
-                    >
-                      View Details
-                    </a>
-                  </Link>
+        <div className="py-16">
+          <div className="container m-auto  text-gray-600 md:px-12 xl:px-6">
+            <h1 className="text-5xl text-center text-green-800 font-semibold my-12">
+              Produk {name}
+            </h1>
+            <div className="grid gap-12 lg:grid-cols-2">
+              {result.map((data) => (
+                <div
+                  className="p-1 rounded-xl group sm:flex space-x-10 bg-white bg-opacity-50 shadow-xl shadow-green-200 hover:rounded-2xl"
+                  key={data.id}
+                >
+                  <Image
+                    src={data.img.produk}
+                    alt={data.title}
+                    loading="lazy"
+                    width={400}
+                    height={250}
+                    className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top md:h-26 rounded-lg transition duration-500 group-hover:rounded-xl"
+                  />
+                  <div className="sm:w-7/12 pl-0 p-5">
+                    <div className="space-y-2">
+                      <div className="space-y-4">
+                        <h4 className="text-2xl font-semibold text-green-700">
+                          {data.title}
+                        </h4>
+                        <p className="text-gray-600 text-sm leading-6 indent-5">
+                          {data.desc}
+                        </p>
+                      </div>
+                      <Link href="https://wa.me/628978946123">
+                        <a
+                          type="button"
+                          className="px-2 flex justify-center items-center  bg-green-500 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full"
+                          target="_blank"
+                        >
+                          <h5 className="-mt-4">
+                            <i className="fa fa-whatsapp whatsapp-icon text-2xl mr-1"></i>
+                            Whatsapp
+                          </h5>
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

@@ -38,21 +38,7 @@ export default function Hero () {
               >
                 Bali Surya Pratama
               </motion.h2>
-              <div className="mt-5 sm:mt-24 sm:flex justify-center sm:max-w-3xl">
-                <div className="rounded-md shadow">
-                  <Link href="/#produk">
-                    <motion.a
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-light rounded-md text-white bg-green-600 hover:bg-[#F5DF99] focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-2 md:text-lg md:px-2 lg:ml-2 md:ml-12 cursor-pointer"
-                      variants={fadeUp}
-                      initial="hidden"
-                      animate="visible"
-                      transition={{ delay: 1.5 }}
-                    >
-                      Produk
-                    </motion.a>
-                  </Link>
-                </div>
-              </div>
+
             </div>
             {/* <div className="w-100 bg-white rounded-md">
                     <h1 className={styles.bgHero}>Halo</h1>

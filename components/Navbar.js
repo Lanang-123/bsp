@@ -1,17 +1,22 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
+
 export default function Navbar() {
   const [state, setState] = useState(false);
+  const [isScroll,setIsScroll] = useState(false);
+  const [height,setWindowSize] = useState(0);
+
+
 
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/" },
     { title: "About", path: "/#about" },
-    { title: "Product", path: "/#produk" },
     { title: "Galery", path: "/Galery" },
-    { title: "Contact", path: "/#contact" },
   ];
 
   return (
@@ -70,10 +75,10 @@ export default function Navbar() {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-start items-start space-y-8 md:flex md:space-x-12 md:space-y-0 md:ml-16">
             {navigation.map((item, idx) => {
               return (
-                <li key={idx} className="text-slate-700 hover:text-green-500">
+                <li key={idx} className="text-slate-700 hover:text-green-500 text-lg">
                   <Link href={item.path}>
                     <a>{item.title}</a>
                   </Link>
@@ -81,13 +86,6 @@ export default function Navbar() {
               );
             })}
           </ul>
-        </div>
-        <div className="hidden md:inline-block">
-          <Link href="/#contact">
-            <a className="py-3 px-4 text-white bg-green-500  rounded-md shadow">
-              Contact
-            </a>
-          </Link>
         </div>
       </div>
     </nav>
