@@ -75,7 +75,7 @@ export default function Navbar() {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-start items-start space-y-8 md:flex md:space-x-12 md:space-y-0 md:ml-16">
+          <ul className="justify-end items-end space-y-8 md:flex md:space-x-12 md:space-y-0 md:ml-16">
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className="text-slate-700 hover:text-green-500 text-lg">
