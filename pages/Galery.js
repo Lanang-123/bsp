@@ -13,7 +13,7 @@ const Galery = () => {
     },
     {
       id:3,
-      foto:"/assets/galery/psa/ps4.jpg"
+      foto:"/assets/galery/psa/psa4.jpg"
     },
     {
       id:5,
@@ -78,13 +78,13 @@ const Galery = () => {
     <div>
       <section className="overflow-hidden text-gray-700 ">
         <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-          <h1 className="text-center text-slate-700 text-5xl mb-10">
+          <h1 className="text-center text-slate-700 md:text-5xl mb-10 text-3xl">
             Gallery Bali Surya Pratama
           </h1>
         </div>
       </section>
 
-      <div className="container grid grid-cols-4 gap-5 mx-auto justify-center my-5">
+      <div className="container grid md:grid-cols-4 grid-cols-2 gap-5 mx-auto justify-center my-5 p-3">
       {dataFoto.map(data => (
           <div className="w-full rounded" key={data.id}>
             <Image 
@@ -92,6 +92,7 @@ const Galery = () => {
               alt="image" 
               width={380} 
               height={380} 
+              className="rounded shadow-3xl"
             />
           </div>
       ))}
