@@ -84,9 +84,9 @@ const Galery = () => {
         </div>
       </section>
 
-      <div class="container grid grid-cols-4 gap-5 mx-auto justify-center my-5">
+      <div className="container grid grid-cols-4 gap-5 mx-auto justify-center my-5">
       {dataFoto.map(data => (
-          <div class="w-full rounded" key={data.id}>
+          <div className="w-full rounded" key={data.id}>
             <Image 
               src={data.foto}
               alt="image" 
