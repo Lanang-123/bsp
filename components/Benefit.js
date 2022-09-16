@@ -15,10 +15,10 @@ const Benefit = () => {
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3 group">
-              <div className="flex rounded-lg h-full border group-hover:bg-green-500 group-hover:text-white bg-white shadow-lg p-8 flex-col">
-                <div className="flex items-center mb-3 mx-auto">
-                  <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-green-500 bg-green-500 text-white flex-shrink-0 ">
+            <div className="p-4 md:w-1/3 w-full group">
+              <div className="flex rounded-lg h-full border  group-hover:bg-green-500 group-hover:text-white bg-white shadow-lg p-8 flex-col">
+                <div className="flex items-center mb-3 mx-auto ">
+                  <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full group-hover:bg-white  group-hover:text-green-500 bg-green-500 text-white flex-shrink-0 ">
                     <MdEmojiPeople className="w-8 h-8"/>
                   </div>
                   <h2 className="text-gray-900 text-2xl title-font font-medium group-hover:text-white">
@@ -27,7 +27,7 @@ const Benefit = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 group">
+            <div className="p-4 md:w-1/3 group w-full">
               <div className="flex rounded-lg h-full border group-hover:bg-green-500 group-hover:text-white bg-white shadow-lg p-8 flex-col">
                 <div className="flex items-center mb-3 mx-auto">
                   <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-green-500 bg-green-500 text-white flex-shrink-0">
@@ -39,7 +39,7 @@ const Benefit = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 group">
+            <div className="p-4 md:w-1/3 group w-full">
               <div className="flex rounded-lg h-full border group-hover:bg-green-500 group-hover:text-white bg-white shadow-lg p-8 flex-col">
                 <div className="flex items-center mb-3 mx-auto">
                   <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-green-500 bg-green-500 text-white flex-shrink-0">
