@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ChatbotIcon from './ChatbotIcon.js';
-import { GoChevronDown, GoComment, GoX } from "react-icons/go";
+import { GoChevronDown, GoComment,GoX } from "react-icons/go";
 import ChatbotForm from './ChatbotForm.js';
 import ChatMessage from './ChatMessage.js';
+import ChatbotOpen from './ChatbotOpen.js';
 
 function Chatbot() {
   const [chatHistory, setChatHistory] = useState([]);
@@ -64,7 +65,7 @@ function Chatbot() {
     <div className='chatbot-container'>
       {/* Chat Toggle */}
       <button id='chatbot-toggler' onClick={toggleChat}>
-        {isChatOpen ? <GoX /> : <GoComment />}
+        {isChatOpen ? <GoX /> : <ChatbotOpen />}
       </button>
 
       {/* Popup Chat */}
