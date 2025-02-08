@@ -24,12 +24,12 @@ export default function Home() {
       <Customer />
       <Contact />
 
-      <Link href="https://wa.me/628978946123">
+      {/* <Link href="https://wa.me/628978946123">
         <a className="whatsapp_float" target="_blank">
           {" "}
           <i className="fa fa-whatsapp whatsapp-icon"></i>
         </a>
-      </Link>
+      </Link> */}
 
       <script
         defer

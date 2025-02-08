@@ -10,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "alpinejs": "^3.10.2",
     "axios": "^0.27.2",
@@ -17,7 +18,7 @@
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.12.0",
     "sparkpost": "^2.1.4",
     "tailwind-capitalize-first-letter": "^1.0.4"
   },
