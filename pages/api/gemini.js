@@ -1,4 +1,3 @@
-// pages/api/gemini.js
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
@@ -9,29 +8,30 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  const { prompt } = req.body;
+  let { prompt, mode } = req.body;
 
   if (!prompt) {
     return res.status(400).json({ message: 'Prompt is required' });
   }
 
+  // Jika mode summary, tambahkan instruksi ringkasan pada prompt
+  if (mode === 'summary') {
+    prompt = "Buat saya summary dari untuk percakapan berikut:\n\n" + prompt;
+  }
+
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-    // Format prompt sesuai dengan yang diharapkan oleh Gemini API
-    const formattedPrompt = Array.isArray(prompt) 
+    const formattedPrompt = Array.isArray(prompt)
       ? prompt.map(msg => ({ role: msg.role, parts: [{ text: msg.text }] }))
       : [{ role: 'user', parts: [{ text: prompt }] }];
 
-    // Mulai chat tanpa riwayat awal
     const chat = model.startChat({
-      history: formattedPrompt, // Kirim riwayat chat jika ada
+      history: formattedPrompt,
       generationConfig: {
         maxOutputTokens: 500,
       },
     });
 
-    // Kirim pesan terakhir sebagai input
     const lastMessage = formattedPrompt[formattedPrompt.length - 1].parts[0].text;
     const result = await chat.sendMessage(lastMessage);
     const response = await result.response;
